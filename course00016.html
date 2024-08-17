@@ -80,7 +80,7 @@
         color: #ff6600;
       }
       .section {
-      padding: 60px 0;
+      padding: 25px 0;
     }
     .sticky-nav {
   position: -webkit-sticky; 
@@ -178,29 +178,30 @@
         <div class="col-md-8">
           <div class="jumbotron">
             <h1 class="display-4">
-              An Introductory Guide to Data Science and Machine Learning
+              Introduction to Web Development
             </h1>
             <p class="lead">
-              Beginner | 93 Lessons | 6h | Certificate of Completion
+              Beginner | 50 Lessons | 4h | Free Access
             </p>
+            <!-- <p>This course provides a comprehensive introduction to web development, covering fundamental concepts and practical skills to help you build and design your own websites.</p> -->
             <!--  <p>This course provides a complete discussion of code implementation and prepares the developers for interview questions on data structures in Java.</p> -->
-            <a href="#" class="btn btn-dark btn-lg border-0"
-              >Unlock Full Access</a
+            <a href="#" class="btn btn-dark btn-lg border-0" data-toggle="modal" data-target="#loginModal"
+              >Start Learning</a
             >
-            <a href="#" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#loginModal">Start Learning</a>
+            <!-- <a href="#" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#loginModal">Start Learning</a> -->
           </div>
         </div>
         <div class="col-md-4">
           <div class="price-card">
             <p>Access this course</p>
             <p><strong>At</strong></p>
-            <p><span style="font-size: 2em">$99</span></p>
-            <a href="#" class="btn btn-primary btn-lg btn-block"
-              >Unlock Full Access</a
-            >
-            <a href="#" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#loginModal"
+            <p><span style="font-size: 2em">$0</span></p>
+            <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#loginModal"
               >Start Learning</a
             >
+            <!-- <a href="#" class="btn btn-secondary btn-lg btn-block" 
+              >Start Learning</a
+            > -->
           </div>
         </div>
       </div>
@@ -229,7 +230,7 @@
                           <button type="submit" class="btn btn-primary">Login</button>
                       </form>
                       <hr>
-                      <p class="text-center">Don't have an account? <a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></p>
+                      <p class="text-center">Don't have an account? <a href="#" id="signupLink">Sign Up</a></p>
                   </div>
               </div>
           </div>
@@ -262,7 +263,7 @@
                           <button type="submit" class="btn btn-primary">Sign Up</button>
                       </form>
                       <hr>
-                      <p class="text-center">Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal">Login</a></p>
+                      <p class="text-center">Already have an account? <a href="#" id="loginLink" >Login</a></p>
                   </div>
               </div>
           </div>
@@ -318,23 +319,10 @@
             <div class="card-body">
               <h2 class="card-title">Course Overview</h2>
               <p class="card-text">
-                There is a lot of dispersed, and somewhat conflicting
-                information on the internet when it comes to data science,
-                making it tough to know where to start. Don't worry.
+                This free course is designed to give you a solid foundation in web development. You'll learn the basics of HTML, CSS, and JavaScript, the three core technologies for building web pages.
               </p>
               <p class="card-text">
-                This course will get you familiar with the state of data science
-                and the related fields such as machine learning and big data.
-                You will be going through the fundamental concepts and libraries
-                which are essential to solve any problem in this field.
-              </p>
-              <p class="card-text">
-                You will work on real-time projects from Kaggle while also
-                honing your mathematical skills which will be used extensively
-                in most problems you face. You will also be taken through a
-                systematic approach to learning about data acquisition to data
-                wrangling and everything in between. This is your all-in-one
-                guide to becoming a confident data scientist.
+                By the end of this course, you'll be able to create and style your own websites, and understand how to make them interactive. Perfect for beginners looking to start a career in web development or simply create their own web projects.
               </p>
             </div>
           </div>
@@ -354,12 +342,12 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    <b>1. What is Data Science ?<b>
+                  <b>1. Introduction to Web Development</b>
                         
                     <span class="float-right"
                       ><i class="fas fa-chevron-down"></i
                     ></span>
-                    <span><h6 class="font-weight-normal">3 Lessons</h6></span>
+                    <span><h6 class="font-weight-normal">2 Lessons</h6></span>
                   </button>
                 </div>
 
@@ -371,13 +359,8 @@
                 >
                   <div class="card-body">
                     <ul class="list-group-flush">
-                      <li class="list-group-item">Data Science vs. Data Analysis vs. Data Engineering</li>
-                      <li class="list-group-item">
-                        Descriptive and Predictive Analytics
-                      </li>
-                      <li class="list-group-item">
-                        Data Science Life Cycle
-                      </li>
+                      <li class="list-group-item">What is Web Development?</li>
+                    <li class="list-group-item">Overview of HTML, CSS, and JavaScript</li>
                     </ul>
                   </div>
                 </div>
@@ -391,12 +374,12 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                  <b>2. Applications of Data Science<b>
+                  <b>2. HTML Basics</b>
                     
                     <span class="float-right"
                       ><i class="fas fa-chevron-down"></i
                     ></span>
-                    <span><h6 class="font-weight-normal">2 Lessons</h6></span>
+                    <span><h6 class="font-weight-normal">5 Lessons</h6></span>
                   </button>
                 </div>
                 <div
@@ -406,10 +389,11 @@
                 >
                   <div class="card-body">
                     <ul class="list-group-flush">
-                      <li class="list-group-item">
-                        Applications in Healthcare and Recommender Systems
-                      </li>
-                      <li class="list-group-item">Image Analysis</li>
+                      <li class="list-group-item">Introduction to HTML</li>
+                      <li class="list-group-item">Basic HTML Tags</li>
+                      <li class="list-group-item">Creating Forms</li>
+                      <li class="list-group-item">Links and Images</li>
+                      <li class="list-group-item">HTML Semantics</li>
                     </ul>
                   </div>
                 </div>
@@ -424,12 +408,12 @@
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                  <b>3.Overview of Libraries <b>
+                  <b>3. CSS Fundamentals</b>
                     
                     <span class="float-right"
                       ><i class="fas fa-chevron-down"></i
                     ></span>
-                    <span><h6 class="font-weight-normal">12 Lessons</h6></span>
+                    <span><h6 class="font-weight-normal">6 Lessons</h6></span>
                   </button>
                 </div>
                 <div
@@ -440,19 +424,11 @@
                 >
                   <div class="card-body">
                     <ul class="list-group-flush">
-                      <li class="list-group-item">Seabornul Soup (Scraping Data from Simple HTML) </li>
-                        <li class="list-group-item">Seabornul Soup (Scraping Data from Html Table)</li>
-                        <li class="list-group-item">Scrapy</li>
-                        <li class="list-group-item">Numpy Basics</li>
-                        <li class="list-group-item">Numpy Array Manipulation </li>
-                        <li class="list-group-item">Sorting Numpy Arrays</li>
-                        <li class="list-group-item">Seaborn</li>
-                        <li class="list-group-item">Basic Statistics on Numpy Arrays</li>
-                        <li class="list-group-item">Broadcasting in Numpy Arrays</li>
-                        <li class="list-group-item">Pandas</li>
-                        <li class="list-group-item">Spacy Part 1</li>
-                        <li class="list-group-item">Spacy Part 2</li>
-                        <li class="list-group-item">Seaborn</li>
+                      <li class="list-group-item">Introduction to CSS</li>
+                      <li class="list-group-item">Selectors and Properties</li>
+                      <li class="list-group-item">Box Model and Layout</li>
+                      <li class="list-group-item">Styling Text and Fonts</li>
+                      <li class="list-group-item">Responsive Design and Media Queries</li>
                     </ul>
                   </div>
                 </div>
@@ -468,12 +444,12 @@
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                  <b>4. Probability and Statistics<b>
+                  <b>4. JavaScript Essentials</b>
                     
                     <span class="float-right"
                       ><i class="fas fa-chevron-down"></i
                     ></span>
-                    <span><h6 class="font-weight-normal">13 Lessons</h6></span>
+                    <span><h6 class="font-weight-normal">7 Lessons</h6></span>
                   </button>
                 </div>
                 <div
@@ -484,19 +460,13 @@
                 >
                   <div class="card-body">
                     <ul class="list-group-flush">
-                      <li class="list-group-item">Probability</li>
-                      <li class="list-group-item">Statistics</li>
-                      <li class="list-group-item">Joint Probability</li>
-                      <li class="list-group-item">Conditional Probability and Bayes Theorem</li>
-                      <li class="list-group-item">Measures of Locations</li>
-                      <li class="list-group-item">Measures of Variability</li>
-                      <li class="list-group-item">Probability Distributions (Binomial and Bernoulli Distributions)</li>
-                      <li class="list-group-item">Gaussian Distribution</li>
-                      <li class="list-group-item">Poisson Distribution</li>
-                      <li class="list-group-item">Skewness and Kurtosis</li>
-                      <li class="list-group-item">Sampling Methods</li>
-                      <li class="list-group-item">Key Concepts in Statistics</li>
-                      <li class="list-group-item">Statistical Hypothesis Testing</li>
+                      <li class="list-group-item">Introduction to JavaScript</li>
+                    <li class="list-group-item">Variables and Data Types</li>
+                    <li class="list-group-item">Functions and Control Flow</li>
+                    <li class="list-group-item">DOM Manipulation</li>
+                    <li class="list-group-item">Event Handling</li>
+                    <li class="list-group-item">Introduction to ES6</li>
+                    <li class="list-group-item">Debugging JavaScript</li>
                     </ul>
                   </div>
                 </div>
@@ -511,12 +481,12 @@
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                  <b>5. Machine Learning Part-1<b>
+                  <b>5. Building Your First Website</b>
                     
                     <span class="float-right"
                       ><i class="fas fa-chevron-down"></i
                     ></span>
-                    <span><h6 class="font-weight-normal">21 Lessons</h6></span>
+                    <span><h6 class="font-weight-normal">4 Lessons</h6></span>
                   </button>
                 </div>
                 <div
@@ -527,254 +497,14 @@
                 >
                   <div class="card-body">
                     <ul class="list-group-flush">
-                      <li class="list-group-item">Machine Learning and its Types</li>
-                      <li class="list-group-item">Deep Learning and Recommender Systems</li>
-                      <li class="list-group-item">What is Regression?</li>
-                      <li class="list-group-item">Univariate Linear Regression</li>
-                      <li class="list-group-item">Multivariate Linear Regression</li>
-                      <li class="list-group-item">Feature Scaling</li>
-                      <li class="list-group-item">Linear Regression in Scikit Learn</li>
-                      <li class="list-group-item">Regularization (Lasso, Ridge, and ElasticNet Regression)</li>
-                      <li class="list-group-item">Support Vector Regression</li>
-                      <li class="list-group-item">Nearest Neighbour Regression</li>
-                      <li class="list-group-item">Decision Tree Regression</li>
-                      <li class="list-group-item">Feature Engineering and Categorical Variables Encoding</li>
-                      <li class="list-group-item">Numerical Variables Transformation</li>
-                      <li class="list-group-item">Feature Selection (Filter Methods)</li>
-                      <li class="list-group-item">Feature Selection (Wrapper Methods)</li>
-                      <li class="list-group-item">Feature Selection (Intrinsic Methods)</li>
-                      <li class="list-group-item">Model Evaluation Measures (Explained Variance Score, MAE, MSE)</li>
-                      <li class="list-group-item">Model Evaluation Measures (Median Absolute Error, R^2 Score)</li>
-                      <li class="list-group-item">Dummy Regressors</li>
-                      <li class="list-group-item">Cross Validation</li>
-                      <li class="list-group-item">Case Study: House Prices Prediction using Advanced Regression</li>
+                      <li class="list-group-item">Project Setup</li>
+                    <li class="list-group-item">Creating HTML Structure</li>
+                    <li class="list-group-item">Applying CSS Styles</li>
+                    <li class="list-group-item">Adding JavaScript Interactivity</li>
                     </ul>
                   </div>
                 </div>
               </div>
-
-              <div class="card">
-                <div class="card-header" style="padding: unset!important ;" id="heading6">
-                  <button
-                    class="accordion-button collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapse6"
-                    aria-expanded="false"
-                    aria-controls="collapse6"
-                  >
-                  <b>6. Machine Learning Part-2<b>
-                    
-                    <span class="float-right"
-                      ><i class="fas fa-chevron-down"></i
-                    ></span>
-                    <span><h6 class="font-weight-normal">15 Lessons</h6></span>
-                  </button>
-                </div>
-                <div
-                  id="collapse6"
-                  class="collapse"
-                  aria-labelledby="heading6"
-                 
-                >
-                  <div class="card-body">
-                    <ul class="list-group-flush">
-                      <li class="list-group-item">Types of ClassiOptimization and Kaggle</li>
-                      <li class="list-group-item">Logistic Regression</li>
-                      <li class="list-group-item">Support Vector Machines</li>
-                      <li class="list-group-item">Decision Trees</li>
-                      <li class="list-group-item">Naive Bayes Part-1</li>
-                      <li class="list-group-item">Naive Bayes Part-2</li>
-                      <li class="list-group-item">K-Nearest Neighbors</li>
-                      <li class="list-group-item">Ensemble Learning Part 1</li>
-                      <li class="list-group-item">Ensemble Learning Part 2</li>
-                      <li class="list-group-item">XGBoost, Light GBM, and CatBoost</li>
-                      <li class="list-group-item">Learning Curves</li>
-                      <li class="list-group-item">Model Evaluation Part 1</li>
-                      <li class="list-group-item">Model Evaluation Part 2</li>
-                      <li class="list-group-item">Dummy Estimators and Handling Imbalanced Class Problems</li>
-                      <li class="list-group-item">Hyper-Parameter Optimization and Kaggle Competition</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <div class="card">
-                <div class="card-header" style="padding: unset!important ;" id="heading7">
-                  <button
-                    class="accordion-button collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapse7"
-                    aria-expanded="false"
-                    aria-controls="collapse7"
-                  >
-                  <b>7. Machine Learning Part-3<b>
-                    
-                    <span class="float-right"
-                      ><i class="fas fa-chevron-down"></i
-                    ></span>
-                    <span><h6 class="font-weight-normal">7 Lessons</h6></span>
-                  </button>
-                </div>
-                <div
-                  id="collapse6"
-                  class="collapse"
-                  aria-labelledby="heading7"
-                >
-                  <div class="card-body">
-                    <ul class="list-group-flush">
-                      <li class="list-group-item">Unsupervised Learning</li>
-                      <li class="list-group-item">K-Means Clustering</li>
-                      <li class="list-group-item">Hierarchical Clustering</li>
-                      <li class="list-group-item">DBSCAN Clustering and Customer Segmentation</li>
-                      <li class="list-group-item">Apriori Algorithm and Association Rules</li>
-                      <li class="list-group-item">Principal Component Analysis for Dimensionality Reduction</li>
-                      <li class="list-group-item">Semi-Supervised Learning Techniques</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header" style="padding: unset!important ;" id="heading8">
-                  <button
-                    class="accordion-button collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapse8"
-                    aria-expanded="false"
-                    aria-controls="collapse8"
-                  >
-                  <b>8. Deep Learning<b>
-                    
-                    <span class="float-right"
-                      ><i class="fas fa-chevron-down"></i
-                    ></span>
-                    <span><h6 class="font-weight-normal">8 Lessons</h6></span>
-                  </button>
-                </div>
-                <div
-                  id="collapse6"
-                  class="collapse"
-                  aria-labelledby="heading8"
-                 
-                >
-                  <div class="card-body">
-                    <ul class="list-group-flush">
-                      <li class="list-group-item">What is Deep Learning?</li>
-                      <li class="list-group-item">Neural Networks</li>
-                      <li class="list-group-item">Feedforward Neural Networks</li>
-                      <li class="list-group-item">Backpropagation Part 1</li>
-                      <li class="list-group-item">Backpropagation Part 2</li>
-                      <li class="list-group-item">Convolutional Neural Network</li>
-                      <li class="list-group-item">Recurrent Neural Network</li>
-                      <li class="list-group-item">LSTM Networks</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header" style="padding: unset!important ;" id="heading9">
-                  <button
-                    class="accordion-button collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapse9"
-                    aria-expanded="false"
-                    aria-controls="collapse9"
-                  >
-                  <b>9. Machine Learning Tools and Libraries<b>
-                    
-                    <span class="float-right"
-                      ><i class="fas fa-chevron-down"></i
-                    ></span>
-                    <span><h6 class="font-weight-normal">3 Lessons</h6></span>
-                  </button>
-                </div>
-                <div
-                  id="collapse9"
-                  class="collapse"
-                  aria-labelledby="heading6"
-                 
-                >
-                  <div class="card-body">
-                    <ul class="list-group-flush">
-                      <li class="list-group-item">Automated Machine Learning</li>
-                      <li class="list-group-item">Pandas Profiling and PyCaret</li>
-                      <li class="list-group-item">RAPIDS (Using GPU for Fast Computations)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header" style="padding: unset!important ;" id="heading10">
-                  <button
-                    class="accordion-button collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapse10"
-                    aria-expanded="false"
-                    aria-controls="collapse10"
-                  >
-                  <b>10. Big Data Tools and Technologies<b>
-                    
-                    <span class="float-right"
-                      ><i class="fas fa-chevron-down"></i
-                    ></span>
-                    <span><h6 class="font-weight-normal">3 Lessons</h6></span>
-                  </button>
-                </div>
-                <div
-                  id="collapse10"
-                  class="collapse"
-                  aria-labelledby="heading6"
-                 
-                >
-                  <div class="card-body">
-                    <ul class="list-group-flush">
-                      <li class="list-group-item">Automated Machine Learning</li>
-                      <li class="list-group-item">Pandas Profiling</li>
-                      <li class="list-group-item">PyCaret</li>
-                      <li class="list-group-item">RAPIDS (Using GPU for Fast Computations)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header" style="padding: unset!important ;" id="heading11">
-                  <button
-                    class="accordion-button collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapse11"
-                    aria-expanded="false"
-                    aria-controls="collapse11"
-                  >
-                  <b>11. Where to go next ?<b>
-                    
-                    <span class="float-right"
-                      ><i class="fas fa-chevron-down"></i
-                    ></span>
-                    <span><h6 class="font-weight-normal">3 Lessons</h6></span>
-                  </button>
-                </div>
-                <div
-                  id="collapse11"
-                  class="collapse"
-                  aria-labelledby="heading11"
-                 
-                >
-                  <div class="card-body">
-                    <ul class="list-group-flush">
-                      <li class="list-group-item">Starting Career on Kaggle (Tips)</li>
-                      <li class="list-group-item">Recommended Courses from Educative</li>
-                      <li class="list-group-item">References and Acknowledgements</li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
 
               <!-- Add more cards for other sections as needed -->
             </div>
@@ -798,25 +528,18 @@
               <div class="col-md-6">
                 <span><i class="fa fa-fast-forward fa-3x how-to"></i></span>   <h4>2x Faster Learning — With No Setup</h4>
                 <p>
-                  Videos are holding you back. Educative's interactive,
+                  Videos are holding you back. Risense's interactive,
                   text-based lessons accelerate learning — no setup, downloads,
                   or alt-tabbing required.
                 </p>
               </div>
-              <div class="col-md-6">
-                <span><i class="fa fa-robot fa-3x how-to"></i></span>  <h4>AI-Powered Learning</h4>
-                <p>
-                  Learn faster and smarter with adaptive AI tools embedded in
-                  every course.
-                </p>
-              </div>
-              <div class="col-md-6">
+              <!-- <div class="col-md-6">
                 <span><i class="fa fa-align-left fa-3x how-to"></i></span><h4>Progress You Can Show</h4>
                 <p>
                   Built-in assessments let you test your skills. Completion
                   certificates let you show them off.
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -967,13 +690,32 @@
 
     <script>
       // JavaScript to handle hiding/showing modals
-      $('#signupModal').on('show.bs.modal', function () {
-          $('#loginModal').modal('hide');
-      });
+      $(document).ready(function () {
+    // Function to switch modals
+    function switchModals(hideModalId, showModalId) {
+        $(hideModalId).modal('hide'); // Hide the current modal
+        $(hideModalId).on('hidden.bs.modal', function () {
+            $(showModalId).modal('show'); // Show the target modal
+            $(hideModalId).off('hidden.bs.modal'); // Remove the event listener
+        });
+    }
 
-      $('#loginModal').on('show.bs.modal', function () {
-          $('#signupModal').modal('hide');
-      });
+    // Click handler for Sign Up link inside Login modal
+    $('#signupLink').click(function (e) {
+        e.preventDefault();
+        switchModals('#loginModal', '#signupModal');
+    });
+
+    // Click handler for Login link inside Signup modal
+    $('#loginLink').click(function (e) {
+        e.preventDefault();
+        switchModals('#signupModal', '#loginModal');
+    });
+});
+
+
+
+
 
     document.querySelectorAll('a[data-toggle="tab"]').forEach(tab => {
   tab.addEventListener('click', function(event) {

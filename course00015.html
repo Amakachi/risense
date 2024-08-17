@@ -80,7 +80,7 @@
         color: #ff6600;
       }
       .section {
-      padding: 60px 0;
+      padding: 25px 0;
     }
     .sticky-nav {
   position: -webkit-sticky; 
@@ -184,10 +184,10 @@
               Beginner | 93 Lessons | 6h | Certificate of Completion
             </p>
             <!--  <p>This course provides a complete discussion of code implementation and prepares the developers for interview questions on data structures in Java.</p> -->
-            <a href="#" class="btn btn-dark btn-lg border-0"
+            <a href="#" class="btn btn-dark btn-lg border-0" data-toggle="modal" data-target="#loginModal"
               >Unlock Full Access</a
             >
-            <a href="#" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#loginModal">Start Learning</a>
+            <!-- <a href="#" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#loginModal">Start Learning</a> -->
           </div>
         </div>
         <div class="col-md-4">
@@ -195,12 +195,12 @@
             <p>Access this course</p>
             <p><strong>At</strong></p>
             <p><span style="font-size: 2em">$99</span></p>
-            <a href="#" class="btn btn-primary btn-lg btn-block"
+            <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#loginModal"
               >Unlock Full Access</a
             >
-            <a href="#" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#loginModal"
+            <!-- <a href="#" class="btn btn-secondary btn-lg btn-block" 
               >Start Learning</a
-            >
+            > -->
           </div>
         </div>
       </div>
@@ -229,7 +229,7 @@
                           <button type="submit" class="btn btn-primary">Login</button>
                       </form>
                       <hr>
-                      <p class="text-center">Don't have an account? <a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></p>
+                      <p class="text-center">Don't have an account? <a href="#" id="signupLink">Sign Up</a></p>
                   </div>
               </div>
           </div>
@@ -262,7 +262,7 @@
                           <button type="submit" class="btn btn-primary">Sign Up</button>
                       </form>
                       <hr>
-                      <p class="text-center">Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal">Login</a></p>
+                      <p class="text-center">Already have an account? <a href="#" id="loginLink" >Login</a></p>
                   </div>
               </div>
           </div>
@@ -618,7 +618,7 @@
                   </button>
                 </div>
                 <div
-                  id="collapse6"
+                  id="collapse7"
                   class="collapse"
                   aria-labelledby="heading7"
                 >
@@ -654,7 +654,7 @@
                   </button>
                 </div>
                 <div
-                  id="collapse6"
+                  id="collapse8"
                   class="collapse"
                   aria-labelledby="heading8"
                  
@@ -798,25 +798,18 @@
               <div class="col-md-6">
                 <span><i class="fa fa-fast-forward fa-3x how-to"></i></span>   <h4>2x Faster Learning — With No Setup</h4>
                 <p>
-                  Videos are holding you back. Educative's interactive,
+                  Videos are holding you back. Risense's interactive,
                   text-based lessons accelerate learning — no setup, downloads,
                   or alt-tabbing required.
                 </p>
               </div>
-              <div class="col-md-6">
-                <span><i class="fa fa-robot fa-3x how-to"></i></span>  <h4>AI-Powered Learning</h4>
-                <p>
-                  Learn faster and smarter with adaptive AI tools embedded in
-                  every course.
-                </p>
-              </div>
-              <div class="col-md-6">
+              <!-- <div class="col-md-6">
                 <span><i class="fa fa-align-left fa-3x how-to"></i></span><h4>Progress You Can Show</h4>
                 <p>
                   Built-in assessments let you test your skills. Completion
                   certificates let you show them off.
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -967,13 +960,32 @@
 
     <script>
       // JavaScript to handle hiding/showing modals
-      $('#signupModal').on('show.bs.modal', function () {
-          $('#loginModal').modal('hide');
-      });
+      $(document).ready(function () {
+    // Function to switch modals
+    function switchModals(hideModalId, showModalId) {
+        $(hideModalId).modal('hide'); // Hide the current modal
+        $(hideModalId).on('hidden.bs.modal', function () {
+            $(showModalId).modal('show'); // Show the target modal
+            $(hideModalId).off('hidden.bs.modal'); // Remove the event listener
+        });
+    }
 
-      $('#loginModal').on('show.bs.modal', function () {
-          $('#signupModal').modal('hide');
-      });
+    // Click handler for Sign Up link inside Login modal
+    $('#signupLink').click(function (e) {
+        e.preventDefault();
+        switchModals('#loginModal', '#signupModal');
+    });
+
+    // Click handler for Login link inside Signup modal
+    $('#loginLink').click(function (e) {
+        e.preventDefault();
+        switchModals('#signupModal', '#loginModal');
+    });
+});
+
+
+
+
 
     document.querySelectorAll('a[data-toggle="tab"]').forEach(tab => {
   tab.addEventListener('click', function(event) {
